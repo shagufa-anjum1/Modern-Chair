@@ -249,5 +249,35 @@ h4{
     color: #fff;
     margin-top: 0;
     margin-bottom: 30px;
-
+}
+h4 span{
+    text-decoration: line-through;
+    font-size: 20px;
+    opacity: 0.6;
+    padding-left: 15px;
+}
+h5{
+    font-family: sans-serif;
+    font-weight: 600px;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.desc-btn:checked+label,
+.desc-btn:not(:checked)+label{
+    position: relative;
+    transition: all 200ms linear;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    color: #ffeba7;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #fff;
+    margin-right: 25px;
+    opacity: 0.5;
 }
