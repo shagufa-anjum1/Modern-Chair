@@ -147,3 +147,70 @@ label.color-6{
     opacity: 1;
     animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
+@keyframes shake {
+    10%,
+    90%{
+        transform: scale3d(-1px, 0, 0) rotate(-1deg);
+    }
+    20%,
+    80%{
+        transform: scale3d(-2px 0,0) rotate(2deg);
+    }
+    30%,
+    50%,
+    70%{
+        transform: scale3d(-3px, 0, 0) rotate(-3deg);
+    }
+    40%,
+    60%{
+        transform: scale3d(3px, 0, 0) rotate(3deg);
+    }
+    
+}
+.back-color{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+    background-image: linear-gradient(196deg, #f1a9a9, #e66767);
+    transition: all 250ms linear;
+    transition-delay: 300ms;
+}
+.back-color.chair-2{
+    background-image: linear-gradient(196deg, #4c4c4c, #262626);
+    opacity: 0;
+}
+.for-color-2:checked ~ .back-color.chair-2{
+    opacity: 1;
+}
+.back-color.chair-3{
+    background-image: linear-gradient(196deg, #8a9fb2, #5f7991);
+    opacity: 0;
+}
+.for-color-3:checked ~ .back-color.chair-3{
+    opacity: 1;
+}
+.back-color.chair-4{
+    background-image: linear-gradient(196deg, #97afc3, #6789a7);
+    opacity: 0;
+}
+.for-color-4:checked ~ .back-color.chair-4{
+    opacity: 1;
+}
+.back-color.chair-5{
+    background-image: linear-gradient(196deg, #afa6a0, #8c7f76);
+    opacity: 0;
+}
+.for-color-5:checked ~ .back-color.chair-5{
+    opacity: 1;
+}
+.back-color.chair-6{
+    background-image: linear-gradient(196deg, #aaadac, #838786);
+    opacity: 0;
+}
+.for-color-6:checked ~ .back-color.chair-6{
+    opacity: 1;
+}
