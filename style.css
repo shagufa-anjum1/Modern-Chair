@@ -50,3 +50,26 @@ p{
     position: absolute;
     visibility: hidden;
 }
+.color-btn:checked+label,
+.color-btn:not(:checked)+label{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    transition: all 200ms linear;
+    border-radius: 4px;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    color: #ffeba7;
+    margin-right: 10px;
+    box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
+    z-index: 10;
+    background-color: blue;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid transparent;
+}
+.color-btn:checked+label{
+    border-color: #434343;
+    transform: scale(1.1);
+}
