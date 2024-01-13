@@ -281,3 +281,44 @@ h5{
     margin-right: 25px;
     opacity: 0.5;
 }
+.desc-btn:checked + label {
+    opacity: 1;
+}
+.desc-btn:not(:checked) + label:hover {
+    opacity: 0.8;
+}
+.desc-sec  {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    transition: all 250ms linear;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transform: translateY(20px);
+}
+.desc-sec.accor-2{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+#desc-1:checked ~ .desc-sec.accor-1{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+#desc-2:checked ~ .desc-sec.accor-2{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+.section-inline{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+.section-inline p span {
+    font-size: 30px;
+    line-height: 1.1;
+}
