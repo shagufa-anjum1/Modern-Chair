@@ -73,3 +73,38 @@ p{
     border-color: #434343;
     transform: scale(1.1);
 }
+label.first-color{
+    margin-left: 500px;
+    background-image: url(color/color1.jpg);
+}
+label.color-2{
+    background-image: url(color/color2.jpg);
+}
+label.color-3{
+    background-image: url(color/color3.jpg);
+}
+label.color-4{
+    background-image: url(color/color4.jpg);
+}
+label.color-5{
+    background-image: url(color/color5.jpg);
+}
+label.color-6{
+    background-image: url(color/color6.jpg);
+}
+.img-wrap{
+    position: absolute;
+    top:100px;
+    left: 0;
+    width: 500px;
+    height: 410px;
+    display: inline-block;
+    z-index: 9;
+    transition: all 550ms linear;
+    transition-delay: 100ms;
+    background-position: center top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(img/chair1.png);
+    opacity: 0;
+}
