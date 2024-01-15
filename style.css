@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: 500;
     line-height: 1.7;
@@ -16,7 +17,7 @@ body{
     overflow-x: none;
 }
 p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
@@ -50,8 +51,8 @@ p{
     position: absolute;
     visibility: hidden;
 }
-.color-btn:checked+label,
-.color-btn:not(:checked)+label{
+.color-btn:checked + label,
+.color-btn:not(:checked) + label{
     position: relative;
     height: 40px;
     width: 40px;
@@ -64,12 +65,11 @@ p{
     margin-right: 10px;
     box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
     z-index: 10;
-    background-color: blue;
     background-position: center;
     background-size: cover;
     border: 3px solid transparent;
 }
-.color-btn:checked+label{
+.color-btn:checked + label{
     border-color: #434343;
     transform: scale(1.1);
 }
@@ -136,7 +136,7 @@ label.color-6{
 .img-wrap.chair-5{
     background-image: url(img/chair5.png);
 }
-.for-color-6:checked ~ .img-wrap.chair-6{
+.for-color-5:checked ~ .img-wrap.chair-5{
     opacity: 1;
     animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
@@ -150,20 +150,20 @@ label.color-6{
 @keyframes shake {
     10%,
     90%{
-        transform: scale3d(-1px, 0, 0) rotate(-1deg);
+        transform: translate3d(-1px, 0, 0) rotate(-1deg);
     }
     20%,
     80%{
-        transform: scale3d(-2px 0,0) rotate(2deg);
+        transform: translate3d(-2px 0,0) rotate(2deg);
     }
     30%,
     50%,
     70%{
-        transform: scale3d(-3px, 0, 0) rotate(-3deg);
+        transform: translate3d(-3px, 0, 0) rotate(-3deg);
     }
     40%,
     60%{
-        transform: scale3d(3px, 0, 0) rotate(3deg);
+        transform: translate3d(3px, 0, 0) rotate(3deg);
     }
     
 }
@@ -222,7 +222,7 @@ label.color-6{
     text-align: left;
 }
 .title-up{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -233,7 +233,7 @@ label.color-6{
     margin-bottom: 10px;
 }
 h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-size: 34px;
     line-height: 1.2;
@@ -242,7 +242,7 @@ h2{
     margin-bottom: 10px;
 }
 h4{
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight:500;
     font-size: 26px;
     line-height: 1.2;
@@ -257,7 +257,7 @@ h4 span{
     padding-left: 15px;
 }
 h5{
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600px;
     font-size: 18px;
     line-height: 1.2;
@@ -273,7 +273,7 @@ h5{
     border: none;
     cursor: pointer;
     color: #ffeba7;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.2;
@@ -324,7 +324,7 @@ h5{
 }
 .btn{
     position: relative;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 2;
